@@ -231,4 +231,8 @@ a:link a:visited a:hover a:active {
     section {
         scroll-snap-align: start;
     }
+    .left_fade_show {
+        transition-delay: .1s;
+        -webkit-transition-delay: .1s;
+    }
 }
