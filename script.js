@@ -66,13 +66,17 @@ function up() {
     if (sec > 0 && sclock == false) {
         sec -= 1
         location.href = '#' + sec_href[sec]
-    } 
+    } else {
+        location.href = '#' + sec_href[0]
+    }
 }
 
 function down() {
     if (sec < max_sec && sclock == false) {
         sec += 1
         location.href = '#' + sec_href[sec]
+    } else {
+        location.href = '#' + sec_href[max_sec]
     }
 }
 
